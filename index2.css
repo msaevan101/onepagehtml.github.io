@@ -346,17 +346,369 @@ p
 
 /* End Hero Section */
 
-/* Form Section */
-#form
-{
-    top: 0;
-    left: 0;
-    position: center;
-    content: object-fit;
+/* Services Section */
+
+#services .services
+ {
+	flex-direction: column;
+	text-align: center;
+	max-width: 1500px;
+	margin: 0 auto;
+	padding: 100px 0;
+	width: 100%;
 }
-/* End Form Section */
+
+#services .service-top 
+{
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+#services .service-bottom 
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 50px;
+	width: 100%;
+}
+
+#services .service-item 
+{
+	flex-basis: 80%;
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px;
+	border-radius: 10px;
+	background-image: url(https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+	background-size: cover;
+	margin: 10px 5%;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+
+#services .service-item::after 
+{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	opacity: .9;
+	z-index: -1;
+}
+
+#services .service-bottom .icon 
+{
+	height: 80px;
+	width: 80px;
+	margin-bottom: 20px;
+}
+
+#services .service-item h2 
+{
+	font-size: 2rem;
+	color: white;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+#services .service-item p 
+{
+	font-size: 1.6rem;
+	color: white;
+	text-align: left;
+}
+
+#virtual-button
+{
+	list-style: none;
+}
+
+.virtual-button a
+{
+	font-size: 1.6rem;
+	color: white;
+}
+
+.virtual-button a:hover
+{
+	color: skyblue;
+	cursor: pointer;
+}
+
+
+/* End Services Section */
+
+/* Projects section */
+#projects .projects 
+{
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+
+#projects .projects-header h1 
+{
+	margin-bottom: 50px;
+}
+
+#projects .all-projects 
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#projects .project-item 
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 80%;
+	margin: 20px auto;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+#projects .project-info 
+{
+	padding: 30px;
+	flex-basis: 50%;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	color: white;
+}
+
+#projects .project-info h1
+ {
+	font-size: 4rem;
+	font-weight: 500;
+}
+
+#projects .project-info h2
+ {
+	font-size: 2.5rem;
+	font-weight: 500;
+	margin-top: 10px;
+}
+
+#projects .project-info p
+{
+    font-size: 1.6rem;
+	color: white;
+}
+
+#projects .project-img 
+{
+	flex-basis: 50%;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+}
+
+#projects .project-img:after
+ {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	opacity: .7;
+}
+
+#projects .project-img img 
+{
+	transition: .3s ease transform;
+}
+
+#projects .project-item:hover .project-img img
+ {
+	transform: scale(1.1);
+}
+/* End Projects section */
+
+/* About Section */
+#about .about
+ {
+	flex-direction: column-reverse;
+	text-align: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 20px;
+}
+
+#about .col-left 
+{
+	width: 250px;
+	height: 360px;
+}
+
+#about .col-right 
+{
+	width: 100%;
+}
+
+#about .col-right h2 
+{
+	color: white;
+	font-size: 3rem;
+	font-weight: 500;
+	letter-spacing: .2rem;
+	margin-bottom: 10px;
+}
+#about .col-right p 
+{
+	font-size: 2rem;
+	margin-bottom: 20px;
+}
+
+#about .col-right .cta 
+{
+	color: white;
+	margin-bottom: 50px;
+	padding: 10px 20px;
+	font-size: 2rem;
+}
+
+#about .col-left .about-img 
+{
+	height: 100%;
+	width: 100%;
+	position: relative;
+	border: 10px solid rgb(102, 102, 102);
+}
+
+#about .col-left .about-img::after 
+{
+	content: '';
+	position: absolute;
+	left: -33px;
+	top: 19px;
+	height: 98%;
+	width: 98%;
+	border: 7px solid black;
+	z-index: -1;
+}
+/* End About Section */
+
+/* contact Section */
+#contact .contact 
+{
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+#contact .contact-items 
+{
+	width: 400px;
+}
+
+#contact .contact-item 
+{
+	width: 80%;
+	padding: 20px;
+	text-align: center;
+	border-radius: 10px;
+	padding: 30px;
+	margin: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0px 0px 18px 0 #0000002c;
+	transition: .3s ease box-shadow;
+}
+
+#contact .contact-item:hover 
+{
+	box-shadow: 0px 0px 5px 0 #0000002c;
+}
+
+#contact .icon 
+{
+	width: 70px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+#contact .contact-info h1 
+{
+	font-size: 2.5rem;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+
+#contact .contact-info h2 
+{
+	font-size: 1.3rem;
+	line-height: 2rem;
+	font-weight: 500;
+}
+
+#contact-btn
+{
+list-style: none;
+}
+
+.contact-btn a
+{
+	font-size: 1.3rem;
+	line-height: 2rem;
+	font-weight: 500;
+	text-decoration: none;
+	color: black;
+}
+
+.contact-btn a:hover
+{
+	cursor: pointer;
+	color: white;
+}
+/*End contact Section */
+
+
 
 /* Footer */
+
+/* Button Seection */
+#button
+{
+	list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.button a
+{
+    background-color: transparent;
+	font-size: 1.6rem;
+	color: white;
+}
+
+.button a:hover
+{
+	cursor: pointer;
+	background-color: black;
+}
+/* End Video Section */
 
 #footer 
 {
@@ -480,11 +832,147 @@ p
 	}
 	/* End Hero */
 
+	/* Services Section */
+	#services .service-bottom .service-item 
+	{
+		flex-basis: 45%;
+		margin: 2.5%;
+	}
+	/* End Services Section */
+
+	/* Project */
+	#projects .project-item 
+	{
+		flex-direction: row;
+	}
+
+	#projects .project-item:nth-child(even) 
+	{
+		flex-direction: row-reverse;
+	}
+
+	#projects .project-item 
+	{
+		height: 400px;
+		margin: 0;
+		width: 100%;
+		border-radius: 0;
+	}
+
+	#projects .all-projects .project-info 
+	{
+		height: 100%;
+	}
+
+	#projects .all-projects .project-img 
+	{
+		height: 100%;
+	}
+	/* End Project */
+
+	/* About */
+	#about .about 
+	{
+		flex-direction: row;
+	}
+
+	#about .col-left 
+	{
+		width: 600px;
+		height: 400px;
+		padding-left: 60px;
+	}
+
+	#about .about .col-left .about-img::after 
+	{
+		left: -45px;
+		top: 34px;
+		height: 98%;
+		width: 98%;
+		border: 10px solid black;
+	}
+
+	#about .col-right 
+	{
+		text-align: left;
+		padding: 30px;
+	}
+
+	#about .col-right h1 
+	{
+		text-align: left;
+	}
+	/* End About */
+
+	/* contact  */
+	#contact .contact 
+	{
+		flex-direction: column;
+		padding: 100px 0;
+		align-items: center;
+		justify-content: center;
+		min-width: 20vh;
+	}
+
+	#contact .contact-items 
+	{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		margin: 0;
+	}
+
+	#contact .contact-item 
+	{
+		width: 30%;
+		margin: 0;
+		flex-direction: row;
+	}
+
+	#contact .contact-item .icon 
+	{
+		height: 100px;
+		width: 100px;
+	}
+
+	#contact .contact-item .icon img 
+	{
+		object-fit: contain;
+	}
+
+	#contact .contact-item .contact-info 
+	{
+		width: 100%;
+		text-align: left;
+		padding-left: 20px;
+	}
+
+	#contact-btn
+{
+list-style: none;
+}
+
+.contact-btn a
+{
+	font-size: 1.3rem;
+	line-height: 2rem;
+	font-weight: 500;
+	text-decoration: none;
+	color: black;
+}
+
+.contact-btn a:hover
+{
+	cursor: pointer;
+	color: white;
+}
+	/* End contact  */
+}
 /* End Media Query For Tablet */
 
 /* Media Query For Desktop */
-@media only screen and (min-width: 1200px) 
-{
+@media only screen and (min-width: 1200px) {
 	/* header */
 	#header .hamburger 
 	{
@@ -514,5 +1002,11 @@ p
 		display: none;
 	}
 	/* End header */
+
+	#services .service-bottom .service-item 
+	{
+		flex-basis: 22%;
+		margin: 1.5%;
+	}
 }
-/* End  Media Query For Desktop */
+/* End  Media Query For Desktop */f
