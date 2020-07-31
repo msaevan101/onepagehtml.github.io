@@ -5,6 +5,7 @@
 	box-sizing: border-box;
 }
 
+
 html 
 {
 	font-size: 10px;
@@ -13,11 +14,24 @@ html
 	scroll-behavior: smooth;
 }
 
+
 body
 {
 		background-color: rgb(102, 102, 102);
 		overflow-x: hidden;
 }
+
+#loading
+{
+    position: fixed;
+    background: rgb(102, 102, 102)
+    url('load.gif')
+    no-repeat center;
+    height: 100vh;
+    width: 100%;
+    z-index: 999999;
+}
+
 
 a 
 {
